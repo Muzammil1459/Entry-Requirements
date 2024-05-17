@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Entry Requirements</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="Logo.jpg" alt="Your Logo" height="80">
+        <h1>Entry Requirements</h1>
+    </header>
+    <div id="container">
+        <label for="universityName">University Name:</label><br>
+        <input type="text" id="universityName" placeholder="Enter university name"><br>
+        <label for="studyLevel">Select Study Level:</label><br>
+        <select id="studyLevel">
+            <option value="undergraduate">Undergraduate</option>
+            <option value="postgraduate">Postgraduate</option>
+        </select><br>
+        <button onclick="fetchEntryRequirements()">Search</button>
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

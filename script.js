@@ -1,7 +1,7 @@
 function fetchEntryRequirements() {
     var universityName = document.getElementById('universityName').value.trim().toLowerCase();
     var studyLevel = document.getElementById('studyLevel').value;
-    var apiKey = 'AIzaSyAteWxjURXgn0OJmI1VmFzO02zbVagsffw';  // Replace with your actual API key
+    var apiKey = 'AIzaSyC8YT34WTuyFrRROTOX7RlCfmBZ1pLaLiw';  // Replace with your actual API key
     var sheetId = '1OyNArgJ928IuNvYMT602KT1HW1WKXGX7uZwkNPKfRyM';  // Replace with your actual sheet ID
     var range = studyLevel === 'undergraduate' ? 'Undergraduate Entry Requirements!A:J' : 'Postgraduate Entry Requirements!A:J';
     var url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${range}?key=${apiKey}`;
